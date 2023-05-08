@@ -1,0 +1,186 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #000;
+}
+
+
+
+
+
+.navbar{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#0c0a0a;   
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: lowercase;
+    font-family: 'Lilita One', cursive;
+    font-size: 22px;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar i{
+    padding-right: 10px;
+}
+
+.logo{
+    position: absolute;
+}
+
+
+.Logo h1{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    color: white;
+    text-transform:uppercase ;
+}
+
+
+.Logo img{
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.image{
+    width: 100Wd;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/mariott.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_explore{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.div_explore h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lilita One', cursive;
+}
+
+.div_explore p{
+    color: white;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    position: absolute;
+    top: 40px;
+}
+
+.image h1{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Lilita One', cursive;
+
+}
+
+.image p{
+    color: white;
+    padding-top: 100px;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+}
+
+.div-body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 100px;
+}
+
+
+
+.hotelN1{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/hotelN1.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hotelN2{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/hotelN2.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hotelN3{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/hotelN3.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-body p{
+    color: white;
+    font: 17px;
+    
+}
+
+@media  only screen and (max-width:400px){
+    .ul li a {
+        font-size: 10px;
+    }
+
+    .logo h1{
+        font-size: 10px;
+    }
+} 
